@@ -36,7 +36,8 @@ class Simulator(object):
 
     def __init__(self, env, size=None, update_delay=2.0, display=True, log_metrics=False, optimized=False):
         self.env = env
-        self.size = size if size is not None else ((self.env.grid_size[0] + 1) * self.env.block_size, (self.env.grid_size[1] + 2) * self.env.block_size)
+        self.size = size if size is not None else ((self.env.grid_size[0] + 1) * \
+                                                   self.env.block_size, (self.env.grid_size[1] + 2) * self.env.block_size)
         self.width, self.height = self.size
         self.road_width = 44
 
@@ -58,9 +59,11 @@ class Simulator(object):
                 self.pygame = importlib.import_module('pygame')
                 self.pygame.init()
                 self.screen = self.pygame.display.set_mode(self.size)
+                
                 self._logo = self.pygame.transform.smoothscale(self.pygame.image.load(os.path.join("images", "logo.png")), (self.road_width, self.road_width))
 
                 self._ew = self.pygame.transform.smoothscale(self.pygame.image.load(os.path.join("images", "east-west.png")), (self.road_width, self.road_width))
+                
                 self._ns = self.pygame.transform.smoothscale(self.pygame.image.load(os.path.join("images", "north-south.png")), (self.road_width, self.road_width))
 
                 self.frame_delay = max(1, int(self.update_delay * 1000))  # delay between GUI frames in ms (min: 1)
