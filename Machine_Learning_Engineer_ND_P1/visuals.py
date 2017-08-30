@@ -26,8 +26,8 @@ def ModelLearning(X, y):
     train_sizes = np.rint(np.linspace(1, X.shape[0]*0.8 - 1, 9)).astype(int)
 
     # Create the figure window
-    fig = pl.figure(figsize=(12,7))
-    pl.style.use('ggplot')
+    fig = pl.figure(figsize=(18, 8))
+    pl.style.use('seaborn-whitegrid')
 
     # Create three different models based on max_depth
     for k, depth in enumerate([1,3,6,10]):
@@ -76,7 +76,7 @@ def ModelComplexity(X, y):
     cv = ShuffleSplit(X.shape[0], n_iter = 10, test_size = 0.2, random_state = 0)
 
     # Vary the max_depth parameter from 1 to 10
-    max_depth = np.arange(1,11)
+    max_depth = np.arange(1, 11)
 
     # Calculate the training and testing scores
     train_scores, test_scores = curves.validation_curve(DecisionTreeRegressor(), X, y, \
@@ -89,7 +89,7 @@ def ModelComplexity(X, y):
     test_std = np.std(test_scores, axis=1)
 
     # Plot the validation curve
-    pl.figure(figsize=(12, 5))
+    pl.figure(figsize=(18, 6))
     pl.title('Decision Tree Regressor Complexity Performance')
     pl.plot(max_depth, train_mean, 'o-', color = '#E24A33', label = 'Training Score')
     pl.plot(max_depth, test_mean, 'o-', color = '#348ABD', label = 'Validation Score')

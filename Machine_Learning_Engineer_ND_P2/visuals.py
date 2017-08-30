@@ -1,4 +1,4 @@
-###########################################
+######################################################################################
 # Suppress matplotlib user warnings
 # Necessary for newer version of matplotlib
 import warnings
@@ -7,7 +7,7 @@ warnings.filterwarnings("ignore", category = UserWarning, module = "matplotlib")
 # Display inline matplotlib plots with IPython
 from IPython import get_ipython
 get_ipython().run_line_magic('matplotlib', 'inline')
-###########################################
+######################################################################################
 
 import matplotlib.pyplot as pl
 import matplotlib.patches as mpatches
@@ -16,16 +16,16 @@ import pandas as pd
 from time import time
 from sklearn.metrics import f1_score, accuracy_score
 
-pl.style.use('ggplot')
+pl.style.use('seaborn-whitegrid')
 
+############################################################################################################
 
 def distribution(data, transformed = False):
     """
     Visualization code for displaying skewed distributions of features
-    """
-    
+    """    
     # Create figure
-    fig = pl.figure(figsize = (14,6));
+    fig = pl.figure(figsize = (18, 6));
 
     # Skewed feature plotting
     for i, feature in enumerate(['capital-gain','capital-loss']):
@@ -49,7 +49,8 @@ def distribution(data, transformed = False):
     fig.tight_layout()
     fig.show()
 
-
+###########################################################################################################
+    
 def evaluate(results, accuracy, f1):
     """
     Visualization code to display results of various learners.
@@ -62,7 +63,7 @@ def evaluate(results, accuracy, f1):
     """
   
     # Create figure
-    fig, ax = pl.subplots(2, 3, figsize = (14,9))
+    fig, ax = pl.subplots(2, 3, figsize = (18, 9))
 
     # Constants
     bar_width = 0.3
@@ -74,11 +75,12 @@ def evaluate(results, accuracy, f1):
             for i in np.arange(3):
                 
                 # Creative plot code
-                ax[j/3, j%3].bar(i+k*bar_width, results[learner][i][metric], width = bar_width, color = colors[k])
-                ax[j/3, j%3].set_xticks([0.45, 1.45, 2.45])
-                ax[j/3, j%3].set_xticklabels(["1%", "10%", "100%"])
-                ax[j/3, j%3].set_xlabel("Training Set Size")
-                ax[j/3, j%3].set_xlim((-0.1, 3.0))
+                ax[int(j/3), j%3].bar(i+k*bar_width, results[learner][i][metric], 
+                                      width = bar_width, color = colors[k])
+                ax[int(j/3), j%3].set_xticks([0.45, 1.45, 2.45])
+                ax[int(j/3), j%3].set_xticklabels(["1%", "10%", "100%"])
+                ax[int(j/3), j%3].set_xlabel("Training Set Size")
+                ax[int(j/3), j%3].set_xlim((-0.1, 3.0))
     
     # Add unique y-labels
     ax[0, 0].set_ylabel("Time (in seconds)")
@@ -112,15 +114,16 @@ def evaluate(results, accuracy, f1):
     patches = []
     for i, learner in enumerate(results.keys()):
         patches.append(mpatches.Patch(color = colors[i], label = learner))
-    pl.legend(handles = patches, bbox_to_anchor = (0.1, 2.55), \
+    pl.legend(handles = patches, bbox_to_anchor = (-0.8, 2.53), \
                loc = 'upper center', borderaxespad = 0., ncol = 3, fontsize = 'x-large')
     
     # Aesthetics
-    pl.suptitle("Performance Metrics for Three Supervised Learning Models", fontsize = 16, y = 1.10)
+    pl.suptitle("Performance Metrics for Three Supervised Learning Models", fontsize = 16, y = 1.15)
     pl.tight_layout()
     pl.show()
     
-
+##############################################################################################################
+    
 def feature_plot(importances, X_train, y_train):
     
     # Display the five most important features
@@ -129,7 +132,7 @@ def feature_plot(importances, X_train, y_train):
     values = importances[indices][:5]
 
     # Creat the plot
-    fig = pl.figure(figsize = (14,8))
+    fig = pl.figure(figsize = (18, 8))
     pl.title("Normalized Weights for First Five Most Predictive Features", fontsize = 16)
     pl.bar(np.arange(5), values, width = 0.6, align="center", color = '#00A000', \
           label = "Feature Weight")
