@@ -1,4 +1,4 @@
-# Machine Learning Engineer ND009 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://olgabelitskaya.github.io/README.html)
+# Machine Learning Engineer ND009 [![Click](https://olgabelitskaya.github.io/badge_awesome.svg)](https://olgabelitskaya.github.io/README.html)
 
 #### P0: Titanic Survival Exploration 
 - https://olgabelitskaya.github.io/MLE_ND_P0_V0.html
