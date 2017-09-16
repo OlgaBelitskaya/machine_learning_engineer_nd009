@@ -1,5 +1,5 @@
 #  &#x1F4CB; &nbsp; Machine Learning Engineer ND009 
-[Built with Udacity](https://udacity.com) [![Click](https://olgabelitskaya.github.io/badge_awesome.svg)](https://olgabelitskaya.github.io/README.html)
+[Built with Udacity](https://udacity.com) [![Click](https://olgabelitskaya.github.io/badge_awesome.svg)](https://olgabelitskaya.github.io/README.html) [![](https://olgabelitskaya.github.io/badge_in_progress.svg)](https://olgabelitskaya.github.io/MLE_ND_P10_V0.html)
 
 #### P0: Titanic Survival Exploration 
 - https://olgabelitskaya.github.io/MLE_ND_P0_V0.html
