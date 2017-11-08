@@ -1,6 +1,8 @@
 #  &#x1F4CB; &nbsp; Machine Learning Engineer ND009 
 [Built with Udacity](https://udacity.com) [![Click](https://olgabelitskaya.github.io/badge_awesome.svg)](https://olgabelitskaya.github.io/README.html) [![](https://olgabelitskaya.github.io/badge_in_progress.svg)](https://olgabelitskaya.github.io/MLE_ND_P10_V0.html)
 
+## Program Projects
+
 #### P0: Titanic Survival Exploration 
 - https://olgabelitskaya.github.io/MLE_ND_P0_V0.html
 
@@ -38,3 +40,25 @@
 
 #### P10: Write an Algorithm for a Dog Identification App 
 - https://olgabelitskaya.github.io/MLE_ND_P10_V0.html
+
+## Practice Projects
+
+#### PP0
+- https://olgabelitskaya.github.io/MLE_ND_PP0.html
+
+#### PP1
+- https://olgabelitskaya.github.io/MLE_ND_PP1.html
+
+#### PP2
+- https://olgabelitskaya.github.io/MLE_ND_PP2.html
+
+#### PP3
+- https://olgabelitskaya.github.io/MLE_ND_PP3.html
+
+#### PP4
+- https://olgabelitskaya.github.io/MLE_ND_PP4_1.html
+- https://olgabelitskaya.github.io/MLE_ND_PP4_2.html
+- https://olgabelitskaya.github.io/MLE_ND_PP4_3.html
+- https://olgabelitskaya.github.io/MLE_ND_PP4_4.html
+- https://olgabelitskaya.github.io/MLE_ND_PP4_5.html
+- https://olgabelitskaya.github.io/MLE_ND_PP4_6.html
