@@ -1,6 +1,18 @@
 #  &#x1F4CB; &nbsp; Machine Learning Engineer ND009 
 [Built with Udacity](https://udacity.com) [![Click](https://olgabelitskaya.github.io/badge_awesome.svg)](https://olgabelitskaya.github.io/README.html) [Machine Learning Engineer Certificate](https://olgabelitskaya.github.io/certificate_nd009.pdf) 
 
+## Interactive Reports with SageMathCell
+
+#### P0: Titanic Survival Exploration 
+- https://olgabelitskaya.github.io/MLE_ND_P0_SMC.html
+
+#### P1: Predicting Boston Housing Prices 
+- https://olgabelitskaya.github.io/MLE_ND_P1_SMC.html
+
+#### P2: Finding Donors for CharityML 
+- https://olgabelitskaya.github.io/MLE_ND_P2_SMC.html
+
+
 ## Program Projects
 
 #### P0: Titanic Survival Exploration 
