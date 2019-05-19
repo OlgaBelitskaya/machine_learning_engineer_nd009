@@ -12,6 +12,12 @@
 #### P2: Finding Donors for CharityML 
 - https://olgabelitskaya.github.io/MLE_ND_P2_SMC.html
 
+#### P3: Creating Customer Segments 
+- https://olgabelitskaya.github.io/MLE_ND_P3_SMC.html
+
+#### P5: Build a Digit Recognition Program
+- https://olgabelitskaya.github.io/MLE_ND_P5_SMC.html
+
 
 ## Program Projects
 
