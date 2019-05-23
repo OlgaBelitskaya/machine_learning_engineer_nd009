@@ -15,8 +15,11 @@
 #### P3: Creating Customer Segments 
 - https://olgabelitskaya.github.io/MLE_ND_P3_SMC.html
 
-#### P5: Build a Digit Recognition Program
+#### P5: Build a Digit Recognition Program (In Progress)
 - https://olgabelitskaya.github.io/MLE_ND_P5_SMC.html
+
+#### P7: Building a Student Intervention System
+- https://olgabelitskaya.github.io/MLE_ND_P7_SMC.html
 
 
 ## Program Projects
