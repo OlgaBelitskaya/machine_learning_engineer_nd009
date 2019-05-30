@@ -18,6 +18,9 @@
 #### P5: Build a Digit Recognition Program (In Progress)
 - https://olgabelitskaya.github.io/MLE_ND_P5_SMC.html
 
+#### P6: Sberbank Russian Housing Market (In Progress)
+- https://olgabelitskaya.github.io/MLE_ND_P6_SMC.html
+
 #### P7: Building a Student Intervention System
 - https://olgabelitskaya.github.io/MLE_ND_P7_SMC.html
 
