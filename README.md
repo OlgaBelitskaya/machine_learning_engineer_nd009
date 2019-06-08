@@ -24,6 +24,8 @@
 #### P7: Building a Student Intervention System
 - https://olgabelitskaya.github.io/MLE_ND_P7_SMC.html
 
+#### P8: Analyzing the NYC Subway Dataset 
+- https://olgabelitskaya.github.io/MLE_ND_P8_SMC.html
 
 ## Program Projects
 
